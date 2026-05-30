@@ -1,0 +1,27 @@
+{
+  "name": "js-blog-ui",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sondnpt00343/js-blog-ui#readme",
+  "bugs": {
+    "url": "https://github.com/sondnpt00343/js-blog-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sondnpt00343/js-blog-ui.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "ejs": "^6.0.1",
+    "vite": "^8.0.14"
+  }
+}
