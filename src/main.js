@@ -1,1 +1,3 @@
-console.log("ooko");
+import { initSidebar } from "./sidebar";
+
+initSidebar();
