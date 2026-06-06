@@ -23,5 +23,8 @@
   "devDependencies": {
     "ejs": "^6.0.1",
     "vite": "^8.0.14"
+  },
+  "dependencies": {
+    "just-validate": "^4.3.0"
   }
 }
