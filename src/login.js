@@ -1,29 +1,21 @@
 import JustValidate from 'just-validate';
-
+import { emailRule,passwordRule } from './validators';
 export const initLogin = () => {
-    const validate = new JustValidate('#login-form',{
+    const el = document.querySelector("#login-form");
+    if(!el) return;
+    const validate = new JustValidate(el,{
         errorFieldCssClass:"invalid",
         errorLabelCssClass:"form-group__error",
         errorLabelStyle:{},
     });
     validate
-    .addField("#email",[
+    .addField("#name",[
         {
-            rule:'required'
-        },
-        {
-            rule:"email",
-            errorMessage:"Email không hợp lệ"
-        },
+            rule:""
+        }
     ])
-    .addField("#password",[
-        {
-            rule:'required'
-        },
-        {
-            rule:"password",
-        },
-    ])
+    .addField("#email",emailRule)
+    .addField("#password",passwordRule)
     .onSuccess(() => {
         console.log("Send API...");
     })
